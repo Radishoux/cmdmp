@@ -1,0 +1,21 @@
+{
+    "appName": "dmcmp",
+    "roleName": "pinpointLambdaRolebb412a85",
+    "cloudformationPolicyName": "cloudformationPolicybb412a85",
+    "cloudWatchPolicyName": "cloudWatchPolicybb412a85",
+    "pinpointPolicyName": "pinpointPolicybb412a85",
+    "authPolicyName": "pinpoint_amplify_bb412a85",
+    "unauthPolicyName": "pinpoint_amplify_bb412a85",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
